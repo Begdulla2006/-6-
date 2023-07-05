@@ -8,13 +8,17 @@
     }
 }
 
+.header {
+    height: 618px;
+}
+
 @media only screen and (min-width: 1024px) {
     .head {
-        // position: absolute;
+        position: absolute;
+        width: 50%;
 
         .head-con {
-            background: rgba(24, 44, 61, 0.9);
-            width: 50%;
+            background: #182C3DE6;
             z-index: 2;
         }
     }
@@ -23,9 +27,7 @@
 .head-inner {
     padding-top: 22px;
 
-    .head-inner-linkB {
-        display: none;
-    }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -40,13 +42,22 @@
             display: none;
         }
 
-        .head-inner-linkB {
-            display: block;
-            position: absolute;
-            transform: translateX(50%);
-            top: 44px;
-            left: 84%;
-        }
+    }
+}
+
+.head-inner-linkB {
+    display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+    .head-inner-linkB {
+        right: 50%;
+        transform: translateX(50%);
+        display: block;
+        position: absolute;
+        top: 44px;
+        z-index: 3;
+        width: 66px;
     }
 }
 
@@ -197,6 +208,7 @@
         }
     }
 }
+
 .swiper-pagination {
     bottom: 25px !important;
 }
