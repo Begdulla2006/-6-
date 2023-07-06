@@ -143,6 +143,14 @@
     }
 }
 
+@media only screen and (min-width: 1024px) {
+    .info {
+        .info-link {
+            display: none;
+        }
+    }
+}
+
 .most {
     text-align: center;
     color: #fff;
@@ -175,6 +183,10 @@
         right: 50%;
         bottom: 88px;
     }
+
+    .most-link {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -198,23 +210,50 @@
 
 @media only screen and (min-width: 1024px) {
     .most {
+        .most-link {
+            list-style: none;
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            gap: 22px;
+            i{
+                font-size: 22px;
+
+
+            }
+        }
+
         a {
             padding: 20px 88px 20px 35px;
+            position: relative;
         }
 
         a::before {
             transform: rotate(270deg);
-            bottom: 105px;
-            right: 144px;
+            bottom: 2px;
+            right: 30px;
         }
     }
 }
-
+@media only screen and (min-width: 1024px) {
+    .most {
+        .most-link {
+            margin: 22px;
+        }
+    }
+}
 .swiper-pagination {
     left: 450px !important;
-    bottom: 5px !important;
+    top: 600px !important;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
-
+@media only screen and (min-width: 1024px) {
+.swiper-pagination {
+    top: 612px !important;
+}
+}
 .swiper-pagination-bullet {
     border-radius: 0;
     margin: 0 !important;
@@ -227,11 +266,13 @@
 .swiper-pagination-bullet-active {
     background: #112537;
 }
-.head-swiper{
-    .head-slide-info{
+
+.head-swiper {
+    .head-slide-info {
         font-size: 15px;
         text-align: right;
-        a{
+
+        a {
             color: #5f5e5c;
             text-decoration: none;
             margin: 30px 0 30px 11px;
@@ -239,4 +280,20 @@
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
     }
+
+
+    img {
+        height: 524px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+.head-swiper {
+    .swiper-wrapper{
+        text-align: center;
+    }
+    img{
+        width: 1163px;
+    }
+}
+
 }
