@@ -268,3 +268,9 @@
     width: 1163px;
   }
 }
+.art-title {
+  padding: 80px 0;
+}
+.art-title .art-block {
+  flex-basis: 100%;
+}
