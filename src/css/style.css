@@ -40,6 +40,7 @@
   .head .head-con {
     background: rgba(24, 44, 61, 0.9019607843);
     z-index: 2;
+    height: 705px;
   }
 }
 .head-inner {
@@ -245,27 +246,30 @@
   background: #112537;
 }
 
-.head-swiper .head-slide-info {
-  font-size: 15px;
-  text-align: right;
-}
-.head-swiper .head-slide-info a {
-  color: #5f5e5c;
-  text-decoration: none;
-  margin: 30px 0 30px 11px;
-  display: inline-block;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-.head-swiper img {
-  height: 524px;
+.head-swiper {
+  display: none;
 }
 
 @media only screen and (min-width: 1024px) {
+  .head-swiper {
+    display: block;
+  }
   .head-swiper .swiper-wrapper {
     text-align: center;
   }
   .head-swiper img {
     width: 1163px;
+  }
+  .head-swiper .head-slide-info {
+    font-size: 15px;
+    text-align: right;
+  }
+  .head-swiper .head-slide-info a {
+    color: #5f5e5c;
+    text-decoration: none;
+    margin: 30px 0 30px 11px;
+    display: inline-block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   }
 }
 .art-title {
