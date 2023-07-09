@@ -1,18 +1,26 @@
 const headswiper = new Swiper('.head-swiper', {
-    direction: 'horizontal',
-    loop: true,
-    //     autoplay: {
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    // },
-  
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-  });
+  direction: 'horizontal',
+  loop: true,
+  //     autoplay: {
+  //     delay: 2500,
+  //     disableOnInteraction: false,
+  // },
 
+  pagination: {
+    el: '.swiper-pagination',
+  },
 
+});
+
+const portwiper = new Swiper('.port-swiper', {
+  direction: 'horizontal',
+  loop: true,
+  //     autoplay: {
+  //     delay: 2500,
+  //     disableOnInteraction: false,
+  // },
+
+});
 
 
 
