@@ -20,6 +20,10 @@ const portwiper = new Swiper('.port-swiper', {
   //     disableOnInteraction: false,
   // },
 
+  768: {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+},
 });
 
 
