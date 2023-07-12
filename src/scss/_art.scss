@@ -105,6 +105,16 @@
     }
 }
 
+@media only screen and (min-width: 768px) {
+    .port-swiper {
+        .port-inner {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
 @media only screen and (min-width: 770px) {
     .port-swiper {
         display: none;
@@ -114,7 +124,8 @@
 .acc-one {
     display: none;
     z-index: 10;
-    width: 100%;
+    width: 770px;
+    margin: 0 auto;
 
     .acc {
         .acc-inner {
@@ -151,7 +162,7 @@
 }
 
 @for $i from 1 to 5 {
-    .radio:nth-child(#{$i}):checked~.acc-inner {
+    .input:nth-child(#{$i}):checked~.acc-inner {
         label:nth-child(#{$i}) {
             flex-basis: 40%;
             z-index: 3;
