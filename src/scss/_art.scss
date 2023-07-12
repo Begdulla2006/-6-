@@ -60,31 +60,37 @@
         font-weight: bold;
         margin-bottom: 30px;
     }
-    li{
+
+    li {
         margin-bottom: 20px;
         font-size: 22px;
         list-style: none;
     }
-    :nth-child(1){
+
+    :nth-child(1) {
         color: #000;
     }
-    .port-info{
+
+    .port-info {
         color: #838383;
     }
 }
+
 @media only screen and (min-width: 768px) {
-    .port{
-        p{
+    .port {
+        p {
             text-align: left;
         }
-        .port-info{
+
+        .port-info {
             display: flex;
             justify-content: space-between;
         }
     }
 }
-.port-swiper{
-    .port-inner{
+
+.port-swiper {
+    .port-inner {
         text-align: center;
     }
 }
