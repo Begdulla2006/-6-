@@ -90,7 +90,71 @@
 }
 
 .port-swiper {
+    display: block;
+
     .port-inner {
-        text-align: center;
+        height: 500px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 100%;
+            width: 250px;
+        }
+    }
+}
+
+@media only screen and (min-width: 770px) {
+    .port-swiper {
+        display: none;
+    }
+}
+
+.acc-one {
+    display: none;
+    z-index: 10;
+    width: 100%;
+
+    .acc {
+        .acc-inner {
+            display: flex;
+
+            label {
+                flex-basis: 20%;
+                position: relative;
+                overflow: hidden;
+                height: 500px;
+                overflow: hidden;
+
+                img {
+                    position: absolute;
+                    height: 100%;
+                    left: 50%;
+                    top: 0;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+
+        input {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 770px) {
+    .acc-one {
+        display: block;
+        height: 500px;
+    }
+}
+
+@for $i from 1 to 5 {
+    .radio:nth-child(#{$i}):checked~.acc-inner {
+        label:nth-child(#{$i}) {
+            flex-basis: 40%;
+            z-index: 3;
+        }
     }
 }

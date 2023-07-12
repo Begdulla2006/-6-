@@ -22,7 +22,7 @@ const portwiper = new Swiper('.port-swiper', {
 
   768: {
     slidesPerView: 1,
-    slidesPerGroup: 1,
+    spaceBetween: 30,
 },
 });
 
