@@ -230,7 +230,8 @@
 
 @media only screen and (min-width: 1024px) {
   .swiper-pagination {
-    top: 612px !important;
+    top: 700px !important;
+    height: 20px !important;
   }
 }
 .swiper-pagination-bullet {
@@ -371,7 +372,7 @@
 .acc-one {
   display: none;
   z-index: 10;
-  width: 770px;
+  width: 800px;
   margin: 0 auto;
 }
 .acc-one .acc .acc-inner {
@@ -379,17 +380,11 @@
 }
 .acc-one .acc .acc-inner label {
   flex-basis: 20%;
-  position: relative;
-  overflow: hidden;
   height: 500px;
-  overflow: hidden;
 }
 .acc-one .acc .acc-inner label img {
-  position: absolute;
   height: 100%;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
+  width: 100%;
 }
 .acc-one .acc input {
   display: none;
