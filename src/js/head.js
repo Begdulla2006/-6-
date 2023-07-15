@@ -19,9 +19,11 @@ const portwiper = new Swiper('.port-swiper', {
   //     delay: 2500,
   //     disableOnInteraction: false,
   // },
-
+  slidesPerView: 2,
+  spaceBetween: 30,
+  
   768: {
-    slidesPerView: 1,
+    slidesPerView: 3,
     spaceBetween: 30,
   },
 });
