@@ -20,11 +20,12 @@ const portwiper = new Swiper('.port-swiper', {
   //     disableOnInteraction: false,
   // },
   slidesPerView: 2,
-  spaceBetween: 30,
-  
+  spaceBetween: 200,
+  centeredSlides: true,
+
   768: {
-    slidesPerView: 3,
-    spaceBetween: 30,
+    slidesPerView: 2,
+    centeredSlides: true,
   },
 });
 
