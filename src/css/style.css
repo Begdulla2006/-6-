@@ -348,6 +348,9 @@
 .port-swiper {
   display: block;
 }
+.port-swiper .swiper-wrapper {
+  margin: 0 0 0 -66px;
+}
 .port-swiper .port-inner {
   height: 500px;
   position: relative;
@@ -378,18 +381,19 @@
   width: 800px;
   margin: 0 auto;
 }
-.acc-one .acc .acc-inner {
+.acc-one .acc-inner {
   display: flex;
 }
-.acc-one .acc .acc-inner label {
+.acc-one .acc-inner label {
   flex-basis: 20%;
   height: 500px;
+  transition: 0.5s;
 }
-.acc-one .acc .acc-inner label img {
+.acc-one .acc-inner label img {
   height: 100%;
   width: 100%;
 }
-.acc-one .acc input {
+.acc-one input {
   display: none;
 }
 

@@ -92,6 +92,10 @@
 .port-swiper {
     display: block;
 
+    .swiper-wrapper {
+        margin: 0 0 0 -66px;
+    }
+
     .port-inner {
         height: 500px;
         position: relative;
@@ -109,6 +113,7 @@
     .port-swiper {
         .port-inner {
             width: 450px;
+
             img {
                 width: 100%;
             }
@@ -128,31 +133,23 @@
     width: 800px;
     margin: 0 auto;
 
-    .acc {
-        .acc-inner {
-            display: flex;
+    .acc-inner {
+        display: flex;
 
-            label {
-                flex-basis: 20%;
-                // position: relative;
-                // overflow: hidden;
-                height: 500px;
-                // overflow: hidden;
+        label {
+            flex-basis: 20%;
+            height: 500px;
+            transition: 0.5s;
 
-                img {
-                    // position: absolute;
-                    height: 100%;
-                    width: 100%;
-                    // left: 50%;
-                    // top: 0;
-                    // transform: translateX(-50%);
-                }
+            img {
+                height: 100%;
+                width: 100%;
             }
         }
+    }
 
-        input {
-            display: none;
-        }
+    input {
+        display: none;
     }
 }
 
