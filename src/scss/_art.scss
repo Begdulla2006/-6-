@@ -137,7 +137,7 @@
         display: flex;
 
         label {
-            flex-basis: 20%;
+            flex-basis: 25%;
             height: 500px;
             transition: 0.5s;
 
@@ -157,13 +157,14 @@
     .acc-one {
         display: block;
         height: 500px;
+        width: 100%;
     }
 }
 
 @for $i from 1 to 5 {
     .input:nth-child(#{$i}):checked~.acc-inner {
         label:nth-child(#{$i}) {
-            flex-basis: 40%;
+            flex-basis: 44%;
             z-index: 3;
         }
     }

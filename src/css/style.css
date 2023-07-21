@@ -385,7 +385,7 @@
   display: flex;
 }
 .acc-one .acc-inner label {
-  flex-basis: 20%;
+  flex-basis: 25%;
   height: 500px;
   transition: 0.5s;
 }
@@ -401,24 +401,25 @@
   .acc-one {
     display: block;
     height: 500px;
+    width: 100%;
   }
 }
 .input:nth-child(1):checked ~ .acc-inner label:nth-child(1) {
-  flex-basis: 40%;
+  flex-basis: 44%;
   z-index: 3;
 }
 
 .input:nth-child(2):checked ~ .acc-inner label:nth-child(2) {
-  flex-basis: 40%;
+  flex-basis: 44%;
   z-index: 3;
 }
 
 .input:nth-child(3):checked ~ .acc-inner label:nth-child(3) {
-  flex-basis: 40%;
+  flex-basis: 44%;
   z-index: 3;
 }
 
 .input:nth-child(4):checked ~ .acc-inner label:nth-child(4) {
-  flex-basis: 40%;
+  flex-basis: 44%;
   z-index: 3;
 }
