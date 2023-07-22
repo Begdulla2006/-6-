@@ -22,12 +22,6 @@ const portwiper = new Swiper('.port-swiper', {
   slidesPerView: 2,
   spaceBetween: 200,
   centeredSlides: true,
-
-  // 768: {
-  //   slidesPerView: 2,
-  //   spaceBetween: 20,
-  //   centeredSlides: true,
-  // },
 });
 
 

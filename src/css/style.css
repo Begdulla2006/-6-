@@ -353,9 +353,6 @@
 .port-swiper {
   display: block;
 }
-.port-swiper .swiper-wrapper {
-  margin: 0 0 0 -66px;
-}
 .port-swiper .port-inner {
   height: 500px;
   position: relative;
@@ -368,6 +365,9 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .port-swiper {
+    margin: 0 0 0 -66px;
+  }
   .port-swiper .port-inner {
     width: 450px;
   }
@@ -385,6 +385,7 @@
   z-index: 10;
   width: 800px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 .acc-one .acc-inner {
   display: flex;
@@ -416,7 +417,7 @@
   color: #fff;
   display: none;
   width: 44px;
-  height: 44px;
+  height: 45px;
   text-align: center;
   padding-bottom: 3px;
 }
@@ -428,7 +429,6 @@
   position: absolute;
   color: #fff;
   font-size: 20px;
-  left: 15px;
   font-weight: 100;
 }
 .acc-one .acc-inner label :nth-child(3) {
@@ -448,6 +448,12 @@
     display: block;
     height: 500px;
     width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .acc-one .acc-inner label :nth-child(1) {
+    position: absolute;
+    left: 15px;
   }
 }
 .input:nth-child(1):checked ~ .acc-inner label:nth-child(1) {

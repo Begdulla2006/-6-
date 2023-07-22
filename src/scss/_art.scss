@@ -92,10 +92,6 @@
 .port-swiper {
     display: block;
 
-    .swiper-wrapper {
-        margin: 0 0 0 -66px;
-    }
-
     .port-inner {
         height: 500px;
         position: relative;
@@ -111,6 +107,8 @@
 
 @media only screen and (min-width: 768px) {
     .port-swiper {
+        margin: 0 0 0 -66px;
+
         .port-inner {
             width: 450px;
 
@@ -132,6 +130,7 @@
     z-index: 10;
     width: 800px;
     margin: 0 auto;
+    margin-bottom: 50px;
 
     .acc-inner {
         display: flex;
@@ -164,7 +163,7 @@
                 color: #fff;
                 display: none;
                 width: 44px;
-                height: 44px;
+                height: 45px;
                 text-align: center;
                 padding-bottom: 3px;
             }
@@ -173,14 +172,15 @@
                 height: 100%;
                 width: 100%;
             }
-            :nth-child(1){
+
+            :nth-child(1) {
                 position: absolute;
                 color: #fff;
                 font-size: 20px;
-                left: 15px;
                 font-weight: 100;
             }
-            :nth-child(3){
+
+            :nth-child(3) {
                 position: absolute;
                 color: #fff;
                 bottom: 55px;
@@ -204,6 +204,19 @@
     }
 }
 
+@media only screen and (min-width: 1024px) {
+    .acc-one {
+        .acc-inner {
+            label {
+                :nth-child(1) {
+                    position: absolute;
+                    left: 15px;
+                }
+            }
+        }
+    }
+}
+
 @for $i from 1 to 5 {
     .input:nth-child(#{$i}):checked~.acc-inner {
         label:nth-child(#{$i}) {
@@ -217,7 +230,8 @@
             &::after {
                 display: block;
             }
-            :nth-child(3){
+
+            :nth-child(3) {
                 display: none;
             }
         }
