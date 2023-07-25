@@ -91,27 +91,28 @@
 
 .port-swiper {
     display: block;
+    position: relative;
 
     .port-inner {
         height: 500px;
         position: relative;
         display: flex;
         justify-content: center;
-        margin-bottom: 66px;
+        margin-bottom: 70px;
 
         img {
             height: 100%;
             width: 250px;
         }
 
-        .port-cl {
-            color:#000;
-            bottom: -100px;
-            position: absolute;
-            font-size: 15px;
-            width: 200px;
-            margin-bottom: 50px;
-        }
+    }
+
+    .portfolio-slider-block {
+        position: absolute;
+        width: 300px;
+        text-align: center;
+        bottom: -22px;
+        font-weight: bold;
     }
 }
 
@@ -173,8 +174,7 @@
                 color: #fff;
                 display: none;
                 width: 44px;
-                height: 44px;
-                text-align: center;
+                height: 42px;
             }
 
             img {
@@ -237,7 +237,9 @@
             }
 
             &::after {
-                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             :nth-child(3) {
