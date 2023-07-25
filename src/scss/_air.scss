@@ -1,7 +1,42 @@
-.air{
-    .air-title{
-        img{
-            width: 100%;
+.air {
+    text-align: center;
+    margin-bottom: 50px;
+    .air-ul {
+        li {
+            color: #838383;
+            font-size: 22px;
+            margin-bottom: 25px;
+            list-style: none;
+            text-align: left;
         }
+    }
+
+    .air-title {
+        img {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
+        color: #838383;
+        font-size: 21px;
+        line-height: 32px;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    p {
+        text-align: center;
+        font-weight: bold;
+        font-size: 44px;
+        font-family: "ROBOTO";
+        margin-bottom: 25px;
+    }
+
+    a {
+        text-decoration: none;
+        border: 2px solid #000;
+        color: #000;
+        padding: 18px 33px;
+        font-size: 20px;
     }
 }
