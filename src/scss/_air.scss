@@ -165,12 +165,20 @@
 .video {
     position: relative;
 
+    .video-text {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-top: 22px;
+
+        p {
+            display: none;
+        }
+    }
+
     video {
         width: 100%;
 
-        .video-text {
-            display: none;
-        }
     }
 }
 
@@ -188,6 +196,7 @@
 
             p {
                 font-size: 22px;
+                display: block;
             }
         }
 

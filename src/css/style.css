@@ -659,11 +659,17 @@
 .video {
   position: relative;
 }
+.video .video-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 22px;
+}
+.video .video-text p {
+  display: none;
+}
 .video video {
   width: 100%;
-}
-.video video .video-text {
-  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -680,6 +686,7 @@
   }
   .video .video-text p {
     font-size: 22px;
+    display: block;
   }
   .video video {
     width: 100%;
