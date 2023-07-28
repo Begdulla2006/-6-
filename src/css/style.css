@@ -529,7 +529,7 @@
 
 .air {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .air .air-ul li {
   color: #838383;
@@ -656,9 +656,32 @@
     margin-left: 77px;
   }
 }
+.video {
+  position: relative;
+}
 .video video {
   width: 100%;
 }
-.video img {
-  width: 100%;
+.video video .video-text {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .video {
+    position: relative;
+  }
+  .video .video-text {
+    position: absolute;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    text-align: center;
+    color: #fff;
+    width: 600px;
+  }
+  .video .video-text p {
+    font-size: 22px;
+  }
+  .video video {
+    width: 100%;
+  }
 }
