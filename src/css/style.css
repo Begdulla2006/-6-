@@ -537,6 +537,8 @@
   margin-bottom: 25px;
   list-style: none;
   text-align: left;
+  flex-basis: 45%;
+  margin-bottom: 66px;
 }
 .air .air-title {
   color: #838383;
@@ -548,6 +550,15 @@
 .air .air-title img {
   width: 100%;
   margin-bottom: 25px;
+}
+.air .air-title .air-title-none {
+  margin-bottom: 33px;
+}
+.air .air-title .air-title-none .air-tit {
+  display: none;
+}
+.air .air-title h1 {
+  display: none;
 }
 .air p {
   text-align: center;
@@ -562,4 +573,92 @@
   color: #000;
   padding: 18px 33px;
   font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .air {
+    text-align: left;
+  }
+  .air .air-title .air-ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .air .air-title h1 {
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 30px;
+    display: block;
+    font-weight: 100;
+    width: 500px;
+  }
+  .air .air-title .air-title-none {
+    display: flex;
+    position: relative;
+  }
+  .air .air-title .air-title-none span {
+    flex-basis: 70%;
+  }
+  .air .air-title .air-title-none .air-tit {
+    display: block;
+    color: #000;
+    position: absolute;
+    right: 20px;
+    top: -60px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .air {
+    display: flex;
+  }
+  .air .air-con {
+    flex-basis: 50%;
+  }
+  .air .air-con .air-ul {
+    display: block;
+    margin-top: 88px;
+  }
+  .air .air-con .air-ul li {
+    width: 300px;
+    height: 50px;
+    transition: 0.5s;
+  }
+  .air .air-con .air-ul li:hover {
+    color: #000;
+    transform: translate(40px);
+    font-weight: bolder;
+  }
+  .air .air-title {
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .air .air-title .air-title-none .air-tit {
+    top: 10px;
+  }
+  .air .air-title a {
+    padding: 18px 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .air {
+    text-align: center;
+  }
+  .air .air-con {
+    text-align: center;
+  }
+  .air .air-con .air-ul {
+    text-align: center;
+  }
+  .air .air-con .air-ul li {
+    margin-left: 77px;
+  }
+}
+.video video {
+  width: 100%;
+}
+.video img {
+  width: 100%;
 }
