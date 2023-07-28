@@ -26,14 +26,17 @@
         }
     }
 }
-.form-foto{
+
+.form-foto {
     display: none;
 }
+
 .form-inp {
     span {
-        i{
+        i {
             display: none;
         }
+
         input {
             background: none;
             border-color: transparent transparent #bec2c5 transparent;
@@ -67,13 +70,15 @@
         .form-block {
             width: 75%;
             margin: 0 auto;
-            .form-inp{
-                span{
+
+            .form-inp {
+                span {
                     position: relative;
-                    i{
+
+                    i {
                         display: block;
                         position: absolute;
-                        right:10px;
+                        right: 10px;
                         color: #bec2c5;
                         bottom: 1px;
                         font-size: 22px;
@@ -83,16 +88,20 @@
         }
     }
 }
+
 @media only screen and (min-width: 1024px) {
-    .form-for{
+    .form-for {
         display: flex;
         flex-basis: 50%;
-        .form{
+
+        .form {
             background: #112537;
-            .form-block{
+
+            .form-block {
                 width: 100%;
-                .form-inp{
-                    :nth-child(4){
+
+                .form-inp {
+                    :nth-child(4) {
                         background: none;
                         border: 2px #fff solid;
                     }
@@ -100,10 +109,12 @@
             }
         }
     }
-    .form-foto{
+
+    .form-foto {
         display: block;
         width: 50%;
-        img{
+
+        img {
             height: 850px;
         }
     }

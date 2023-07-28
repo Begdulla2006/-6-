@@ -12,7 +12,7 @@ const headswiper = new Swiper('.head-swiper', {
 
 });
 
-const portwiper = new Swiper('.port-swiper', {
+const portswiper = new Swiper('.port-swiper', {
   direction: 'horizontal',
   loop: true,
   //     autoplay: {
@@ -24,6 +24,17 @@ const portwiper = new Swiper('.port-swiper', {
   centeredSlides: true,
 });
 
+const hotswiper = new Swiper('.hot-swiper', {
+  direction: 'horizontal',
+  loop: true,
+  //     autoplay: {
+  //     delay: 2500,
+  //     disableOnInteraction: false,
+  // },
+  slidesPerView: 2,
+  spaceBetween: 200,
+  centeredSlides: true,
+});
 
 
 
