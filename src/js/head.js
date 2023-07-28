@@ -31,9 +31,6 @@ const hotswiper = new Swiper('.hot-swiper', {
   //     delay: 2500,
   //     disableOnInteraction: false,
   // },
-  slidesPerView: 2,
-  spaceBetween: 200,
-  centeredSlides: true,
 });
 
 
