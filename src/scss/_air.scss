@@ -230,37 +230,39 @@
         font-size: 47px;
     }
 
-    .etap-block {
-        position: relative;
+    .etap-inner {
+        .etap-block {
+            position: relative;
 
-        .etap-info {
-            :nth-child(1) {
-                font-size: 22px;
-                text-align: left;
-                margin-bottom: 30px;
-                font-weight: 500;
+            .etap-info {
+                :nth-child(1) {
+                    font-size: 22px;
+                    text-align: left;
+                    margin-bottom: 30px;
+                    font-weight: 500;
 
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 40px;
-                    height: 2px;
-                    background-color: #000;
-                    top: 40px;
-                    left: 5px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 40px;
+                        height: 2px;
+                        background-color: #000;
+                        top: 40px;
+                        left: 5px;
+                    }
+                }
+
+                :nth-child(2) {
+                    font-size: 18px;
+                    text-align: left;
+                    color: #838383;
+                    margin-bottom: 33px;
                 }
             }
 
-            :nth-child(2) {
-                font-size: 18px;
-                text-align: left;
-                color: #838383;
-                margin-bottom: 33px;
+            .etap-num {
+                display: none;
             }
-        }
-
-        .etap-num {
-            display: none;
         }
     }
 }
@@ -269,13 +271,28 @@
     .etap {
         .etap-inner {
             display: flex;
+            flex-wrap: wrap;
 
             .etap-block {
-                flex-basis: 48%;
-                flex-wrap: wrap;
+                width: 45%;
 
                 .etap-num {
                     display: block;
+                }
+
+                .etap-info {
+                    margin-left: 55px;
+
+                    :nth-child(1) {
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 115px;
+                            left: 50px;
+                            color: #838383;
+                        }
+                    }
                 }
             }
         }

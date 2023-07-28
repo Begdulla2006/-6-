@@ -708,16 +708,16 @@
   text-align: center;
   font-size: 47px;
 }
-.etap .etap-block {
+.etap .etap-inner .etap-block {
   position: relative;
 }
-.etap .etap-block .etap-info :nth-child(1) {
+.etap .etap-inner .etap-block .etap-info :nth-child(1) {
   font-size: 22px;
   text-align: left;
   margin-bottom: 30px;
   font-weight: 500;
 }
-.etap .etap-block .etap-info :nth-child(1)::before {
+.etap .etap-inner .etap-block .etap-info :nth-child(1)::before {
   content: "";
   position: absolute;
   width: 40px;
@@ -726,25 +726,35 @@
   top: 40px;
   left: 5px;
 }
-.etap .etap-block .etap-info :nth-child(2) {
+.etap .etap-inner .etap-block .etap-info :nth-child(2) {
   font-size: 18px;
   text-align: left;
   color: #838383;
   margin-bottom: 33px;
 }
-.etap .etap-block .etap-num {
+.etap .etap-inner .etap-block .etap-num {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
   .etap .etap-inner {
     display: flex;
+    flex-wrap: wrap;
   }
   .etap .etap-inner .etap-block {
-    flex-basis: 48%;
-    flex-wrap: wrap;
+    width: 45%;
   }
   .etap .etap-inner .etap-block .etap-num {
     display: block;
+  }
+  .etap .etap-inner .etap-block .etap-info {
+    margin-left: 55px;
+  }
+  .etap .etap-inner .etap-block .etap-info :nth-child(1)::before {
+    content: "";
+    position: absolute;
+    top: 115px;
+    left: 50px;
+    color: #838383;
   }
 }
