@@ -1,0 +1,23 @@
+.form {
+    height: 800px;
+    background: url(../images/formBg.png);
+    background-repeat: no-repeat;
+    flex-basis: 100%;
+    background-size: 100% 100%;
+    .form-block{
+        padding: 80px 0;
+        .form-block-inner{
+            color: #fff;
+            text-align: center;
+            :nth-child(1){
+                font-size: 50px;
+                font-family: "ROBOTO";
+            }
+            :nth-child(2){
+                font-size: 18px;
+                color: #bec2c5;
+                margin-top: 22px;
+            }
+        }
+    }
+}

@@ -238,7 +238,7 @@
                 :nth-child(1) {
                     font-size: 22px;
                     text-align: left;
-                    margin-bottom: 30px;
+                    margin-bottom: 40px;
                     font-weight: 500;
 
                     &::before {
@@ -272,12 +272,15 @@
         .etap-inner {
             display: flex;
             flex-wrap: wrap;
+            margin-top: 50px;
 
             .etap-block {
                 width: 45%;
 
                 .etap-num {
                     display: block;
+                    position: absolute;
+                    top: -20px;
                 }
 
                 .etap-info {
@@ -288,7 +291,28 @@
                         &::before {
                             content: "";
                             position: absolute;
-                            top: 115px;
+                            top: 40px;
+                            left: 50px;
+                            color: #838383;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .etap{
+        .etap-inner{
+            .etap-block{
+                flex-basis: 31%;
+                margin-bottom: 50px;
+                .etap-info {
+                    :nth-child(1) {
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 50px;
                             left: 50px;
                             color: #838383;
                         }
