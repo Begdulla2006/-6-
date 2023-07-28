@@ -912,23 +912,36 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .hot-block {
+  .hot-swiper .hot-block {
     background: #fff;
     box-shadow: 0 0 10px 0 #bec2c5;
     width: 90%;
     height: 323px;
     padding: 33px;
+    margin: 0 auto;
   }
-  .hot-block img {
+  .hot-swiper .hot-block img {
     position: absolute;
-    right: 0;
+    right: 5px;
     bottom: 55px;
   }
-  .hot-block :nth-child(3) {
+  .hot-swiper .hot-block :nth-child(3) {
     letter-spacing: 3px;
     text-align: left;
   }
-  .hot-block :nth-child(4) {
+  .hot-swiper .hot-block :nth-child(4) {
     width: 85%;
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .hot-swiper .hot-block {
+    width: 55%;
+  }
+  .hot-swiper .hot-block img {
+    right: 250px;
+  }
+  .hot-swiper .hot-block :nth-child(4) {
+    width: 88%;
   }
 }

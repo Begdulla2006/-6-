@@ -120,18 +120,20 @@
         }
     }
 }
-.slider{
+
+.slider {
     margin: 50px 0;
     background: #fdfaf3;
 
-    p{
+    p {
         font-size: 46px;
         text-align: center;
     }
 }
+
 @media only screen and (min-width: 768px) {
-    .slider{
-        p{
+    .slider {
+        p {
             text-align: left;
             font-family: "ROBOTO";
             font-weight: 500;
@@ -139,45 +141,76 @@
         }
     }
 }
-.hot-swiper{
+
+.hot-swiper {
     padding: 0 5px;
-    .hot-block{
+
+    .hot-block {
         text-align: center;
     }
-    p{
-    color: #000;
-    font-size: 25px;
-    padding-top: 20px;
-        }
-    :nth-child(3){
+
+    p {
+        color: #000;
+        font-size: 25px;
+        padding-top: 20px;
+    }
+
+    :nth-child(3) {
         color: #F8A25A;
         font-size: 18px;
         letter-spacing: 4px;
     }
-    :nth-child(4){
+
+    :nth-child(4) {
         color: #898989;
         font-size: 20px;
         line-height: 30px;
     }
 }
+
 @media only screen and (min-width: 768px) {
-    .hot-block{
-        background: #fff;
-        box-shadow: 0 0 10px 0 #bec2c5;
-        width: 90%;
-        height: 323px;
-        padding: 33px;
-        img{
-            position:absolute;
-            right: 0;
-            bottom: 55px;
+    .hot-swiper {
+
+        .hot-block {
+            background: #fff;
+            box-shadow: 0 0 10px 0 #bec2c5;
+            width: 90%;
+            height: 323px;
+            padding: 33px;
+            margin: 0 auto;
+
+            img {
+                position: absolute;
+                right: 5px;
+                bottom: 55px;
+            }
+
+            :nth-child(3) {
+                letter-spacing: 3px;
+                text-align: left;
+            }
+
+            :nth-child(4) {
+                width: 85%;
+                font-size: 22px;
+            }
         }
-        :nth-child(3){
-            letter-spacing: 3px;
-            text-align: left;
-        }
-        :nth-child(4){
-            width: 85%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .hot-swiper {
+
+        .hot-block {
+            width: 55%;
+
+            img {
+                right: 250px;
+            }
+
+            :nth-child(4) {
+                width: 88%;
+            }
         }
     }
 }
