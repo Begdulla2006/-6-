@@ -887,6 +887,12 @@
     font-family: "ROBOTO";
     font-weight: 500;
     font-size: 48px;
+    margin-bottom: 55px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .slider p {
+    margin-bottom: 66px;
   }
 }
 .hot-swiper {
@@ -904,6 +910,7 @@
   color: #F8A25A;
   font-size: 18px;
   letter-spacing: 4px;
+  padding: 0;
 }
 .hot-swiper :nth-child(4) {
   color: #898989;
@@ -919,6 +926,9 @@
     height: 323px;
     padding: 33px;
     margin: 0 auto;
+  }
+  .hot-swiper .hot-block p {
+    margin: 0;
   }
   .hot-swiper .hot-block img {
     position: absolute;

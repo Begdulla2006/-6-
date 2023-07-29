@@ -138,6 +138,15 @@
             font-family: "ROBOTO";
             font-weight: 500;
             font-size: 48px;
+            margin-bottom: 55px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .slider {
+        p {
+            margin-bottom: 66px;
         }
     }
 }
@@ -159,6 +168,7 @@
         color: #F8A25A;
         font-size: 18px;
         letter-spacing: 4px;
+        padding: 0;
     }
 
     :nth-child(4) {
@@ -178,6 +188,10 @@
             height: 323px;
             padding: 33px;
             margin: 0 auto;
+
+            p {
+                margin: 0;
+            }
 
             img {
                 position: absolute;
