@@ -898,24 +898,40 @@
 }
 .hot-swiper {
   padding: 0 5px;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
 }
 .hot-swiper .swiper-button-next {
   right: 0px;
   width: 200px;
   height: 200px;
+  display: none;
 }
 .hot-swiper .swiper-button-next::after {
   display: none;
+}
+.hot-swiper .swiper-button-next::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 43, 60, 0.8);
 }
 .hot-swiper .swiper-button-prev {
   left: 0px;
   width: 200px;
   height: 200px;
+  display: none;
 }
 .hot-swiper .swiper-button-prev::after {
   display: none;
+}
+.hot-swiper .swiper-button-prev::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(28, 43, 60, 0.8);
 }
 .hot-swiper .hot-block {
   text-align: center;
@@ -923,7 +939,6 @@
 .hot-swiper p {
   color: #000;
   font-size: 25px;
-  padding-top: 20px;
 }
 .hot-swiper :nth-child(3) {
   color: #F8A25A;
@@ -933,8 +948,6 @@
 }
 .hot-swiper :nth-child(4) {
   color: #898989;
-  font-size: 20px;
-  line-height: 30px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -951,7 +964,7 @@
   }
   .hot-swiper .hot-block img {
     position: absolute;
-    right: 5px;
+    right: 10px;
     bottom: 55px;
   }
   .hot-swiper .hot-block :nth-child(3) {
@@ -960,10 +973,15 @@
   }
   .hot-swiper .hot-block :nth-child(4) {
     width: 85%;
-    font-size: 22px;
   }
 }
 @media only screen and (min-width: 1440px) {
+  .hot-swiper .swiper-button-next {
+    display: block;
+  }
+  .hot-swiper .swiper-button-prev {
+    display: block;
+  }
   .hot-swiper .hot-block {
     width: 55%;
   }
@@ -972,5 +990,59 @@
   }
   .hot-swiper .hot-block :nth-child(4) {
     width: 88%;
+  }
+}
+.pas {
+  background: #112537;
+  color: #F8A25A;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.pas .pas-icon {
+  text-align: center;
+  padding: 50px 0;
+}
+.pas .pas-icon img {
+  padding-bottom: 33px;
+}
+.pas .pas-icon .pas-ul {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  padding-bottom: 30px;
+  font-size: 20px;
+}
+.pas .pas-icon .pas-ul li {
+  list-style: none;
+  margin: 0 20px;
+  color: #fff;
+}
+.pas .pass-info {
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+.pas .pass-info-p {
+  padding-bottom: 55px;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .pas {
+    position: relative;
+  }
+  .pas .pass-info {
+    position: absolute;
+    top: 95px;
+  }
+  .pas .pass-info-p {
+    position: absolute;
+    top: 95px;
+    right: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .pas .pas-ul li {
+    font-size: 25px;
   }
 }
