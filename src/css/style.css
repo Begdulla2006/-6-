@@ -863,7 +863,6 @@
     background: none;
     border: 2px #fff solid;
   }
-
   .form-foto {
     display: block;
     width: 50%;
@@ -873,8 +872,9 @@
   }
 }
 .slider {
-  margin: 50px 0;
+  padding: 50px 0;
   background: #fdfaf3;
+  position: relative;
 }
 .slider p {
   font-size: 46px;
@@ -887,16 +887,34 @@
     font-family: "ROBOTO";
     font-weight: 500;
     font-size: 48px;
-    margin-bottom: 55px;
+    padding-bottom: 55px;
   }
 }
 @media only screen and (min-width: 1024px) {
   .slider p {
-    margin-bottom: 66px;
+    padding-bottom: 66px;
   }
 }
 .hot-swiper {
   padding: 0 5px;
+  width: 70%;
+  margin: 0 auto;
+}
+.hot-swiper .swiper-button-next {
+  right: 0px;
+  width: 200px;
+  height: 200px;
+}
+.hot-swiper .swiper-button-next::after {
+  display: none;
+}
+.hot-swiper .swiper-button-prev {
+  left: 0px;
+  width: 200px;
+  height: 200px;
+}
+.hot-swiper .swiper-button-prev::after {
+  display: none;
 }
 .hot-swiper .hot-block {
   text-align: center;

@@ -27,11 +27,44 @@ const portswiper = new Swiper('.port-swiper', {
 const hotswiper = new Swiper('.hot-swiper', {
   direction: 'horizontal',
   loop: true,
+  slidesPerView: 1,
+  slidesPerGroup: 1,
   //     autoplay: {
   //     delay: 2500,
   //     disableOnInteraction: false,
   // },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
 });
+
+let prevImg = document.querySelector(".prev-img");
+let nextImg = document.querySelector(".next-img");
+
+window.addEventListener("DOMContentLoaded", () => {
+  let next = ((hotswiper.realIndex == 2 ? 0 : hotswiper.realIndex + 1) + 1);
+  let prev = ((hotswiper.realIndex == 0 ? 2 : hotswiper.realIndex - 1) + 1);
+  prevImg.style.background = "url(" + "../images/slide" + prev + ".png" + ")";
+  nextImg.style.background = "url(" + "../images/slide" + next + ".png" + ")";
+})
+
+hotswiper.on("slideChangeTransitionEnd", () => {
+  console.log(hotswiper.realIndex);
+  let next = ((hotswiper.realIndex == 2 ? 0 : hotswiper.realIndex + 1) + 1);
+  let prev = ((hotswiper.realIndex == 0 ? 2 : hotswiper.realIndex - 1) + 1);
+  prevImg.style.background = "url(" + "../images/slide" + prev + ".png" + ")";
+  nextImg.style.background = "url(" + "../images/slide" + next + ".png" + ")";
+})
+
+
+
+
+
+
+
 
 
 
