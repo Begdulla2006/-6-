@@ -1,10 +1,10 @@
 const headswiper = new Swiper('.head-swiper', {
-  direction: 'horizontal',
+  direction: 'horizontall',
   loop: true,
-  //     autoplay: {
-  //     delay: 2500,
-  //     disableOnInteraction: false,
-  // },
+      autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+  },
 
   pagination: {
     el: '.swiper-pagination',
@@ -15,10 +15,10 @@ const headswiper = new Swiper('.head-swiper', {
 const portswiper = new Swiper('.port-swiper', {
   direction: 'horizontal',
   loop: true,
-  //     autoplay: {
-  //     delay: 2500,
-  //     disableOnInteraction: false,
-  // },
+      autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+  },
   slidesPerView: 2,
   spaceBetween: 200,
   centeredSlides: true,
@@ -29,10 +29,10 @@ const hotswiper = new Swiper('.hot-swiper', {
   loop: true,
   slidesPerView: 1,
   slidesPerGroup: 1,
-  //     autoplay: {
-  //     delay: 2500,
-  //     disableOnInteraction: false,
-  // },
+      autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+  },
 
   navigation: {
     nextEl: ".swiper-button-next",
