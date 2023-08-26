@@ -166,7 +166,8 @@
         &::after {
             display: none;
         }
-        &::before{
+
+        &::before {
             content: "";
             position: absolute;
             width: 100%;
@@ -184,7 +185,8 @@
         &::after {
             display: none;
         }
-        &::before{
+
+        &::before {
             content: "";
             position: absolute;
             width: 100%;
@@ -305,6 +307,7 @@
         padding-bottom: 20px;
         font-size: 20px;
     }
+
     .pass-info-p {
         padding-bottom: 55px;
         font-size: 20px;
@@ -314,10 +317,12 @@
 @media only screen and (min-width: 768px) {
     .pas {
         position: relative;
+
         .pass-info {
             position: absolute;
             top: 95px;
         }
+
         .pass-info-p {
             position: absolute;
             top: 95px;
@@ -325,10 +330,11 @@
         }
     }
 }
+
 @media only screen and (min-width: 1024px) {
-    .pas{
-        .pas-ul{
-            li{
+    .pas {
+        .pas-ul {
+            li {
                 font-size: 25px;
             }
         }

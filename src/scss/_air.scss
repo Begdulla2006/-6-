@@ -301,12 +301,14 @@
         }
     }
 }
+
 @media only screen and (min-width: 1024px) {
-    .etap{
-        .etap-inner{
-            .etap-block{
+    .etap {
+        .etap-inner {
+            .etap-block {
                 flex-basis: 31%;
                 margin-bottom: 50px;
+
                 .etap-info {
                     :nth-child(1) {
                         &::before {

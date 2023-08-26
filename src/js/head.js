@@ -1,9 +1,9 @@
 const headswiper = new Swiper('.head-swiper', {
   direction: 'horizontall',
   loop: true,
-      autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
 
   pagination: {
@@ -15,9 +15,9 @@ const headswiper = new Swiper('.head-swiper', {
 const portswiper = new Swiper('.port-swiper', {
   direction: 'horizontal',
   loop: true,
-      autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
   slidesPerView: 2,
   spaceBetween: 200,
@@ -29,9 +29,9 @@ const hotswiper = new Swiper('.hot-swiper', {
   loop: true,
   slidesPerView: 1,
   slidesPerGroup: 1,
-      autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
   },
 
   navigation: {
@@ -78,7 +78,7 @@ hotswiper.on("slideChangeTransitionEnd", () => {
 // $ git config --global user.email johndoe@example.com}
 //   git commit -m "First"
 //   git branch -M main
-//   git remote add origin https://github.com/Begdulla2006/zz.git
+//   git remote add origin https://github.com/Begdulla2006/6.git
 //   git push -u origin main
 
 //   git add .
